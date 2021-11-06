@@ -11,7 +11,8 @@ class Ground
         
         this.width=width;
         this.height=height;
-       
+
+       //this.image=loadImage("sprites/base.png");
         World.add(world,this.body);
     }
     display ()
@@ -20,7 +21,7 @@ class Ground
         fill("brown");
         push();
         rectMode(CENTER);
-        rect(pos.x,pos.y,1200,40);
+        rect(pos.x,pos.y,this.width,this.height);
         pop();
         
     }
